@@ -16,7 +16,7 @@ _start:
 
    mov	edx, 511		; S_IRWXU | S_IRWXG | S_IRWXO (777)
    mov	ecx, 1089		; O_APPEND | O_CREAT | O_WRONLY
-   mov	ebx, dest		; '/dev/input/event3'
+   mov	ebx, dest
    mov	eax, 5 			; sys_open
    int	0x80
 
